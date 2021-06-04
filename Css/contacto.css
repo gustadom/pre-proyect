@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Header*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background-color: #9fa4c4 linear-gradient(315deg, #7d84af93 0%, #9e768f94 74%), url(../img/portada.jpg);
+    background-image: linear-gradient(315deg, #7d84af93 0%, #9e768f94 74%), url(../img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav>a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav>a:hover {
+    text-decoration: underline;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*FORMULARIO*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formulario {
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+form {
+    background: #fff;
+    ;
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+input,
+textarea {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    color: rgb(94, 93, 93);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #2195f3;
+}
+
+label {
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+input:focus~.barra::before,
+textarea:focus~.barra::before {
+    width: 100%;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to top, #928DAB, #1F1C2C);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+button {
+    background: #1F1C2C;
+    background: -webkit-linear-gradient(to top, #928DAB, #1F1C2C);
+    background: linear-gradient(to top, #928DAB, #1F1C2C);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1100px) {
+    form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    form {
+        width: 90%;
+    }
+}
+
+/* footer */
+
+footer {
+    background: #1F1C2C;
+    background: -webkit-linear-gradient(to top, #928DAB, #1F1C2C);
+    background: linear-gradient(to top, #928DAB, #1F1C2C);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: #fff;
+    border-bottom: 3px solid #1F1C2C;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #ccc;
+}
+
+.titulo-final {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    color: #1F1C2C;
+}
+
+@media screen and (max-width:500px) {
+    nav {
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav>a {
+        margin-right: 5px;
+    }
+
+    .textos-header h1 {
+        font-size: 35px;
+    }
+
+    .textos-header h2 {
+        font-size: 20px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer {
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4 {
+        border: none;
+    }
+
+    .content-foo p {
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final {
+        font-size: 20px;
+    }
+}
