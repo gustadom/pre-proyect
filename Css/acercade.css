@@ -6,7 +6,7 @@
 
 .contenedor {
     padding: 60px 0;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
@@ -87,19 +87,18 @@ header .textos-header {
 
 
 .servicio-cont {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .servicio-ind {
-    width: 28%;
+    width: 30%;
     text-align: center;
 }
 
 .servicio-ind img {
     width: 90%;
-    border-radius: 10px;
+    border-radius: 60px;
 }
 
 .servicio-ind h3 {
@@ -107,8 +106,11 @@ header .textos-header {
 }
 
 .servicio-ind p {
+    display: inline-block;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
     font-weight: 300;
-    text-align: center;
 }
 
 /* footer */
